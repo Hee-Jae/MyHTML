@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="데이터 입력 상자를 만들 수 있다.">
+	<meta name="keywords" content="HTML,HTML문법,HTML기본,웹,프로그래밍,웹개발,form,data,box,text,입력">
+	<meta name="author" content="HYStarT">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<title>입력폼 만들기</title>
+</head>
+
+<body>
+	<header>
+		<a href="main.html"><h1> HTML의 기본 </h1></a>
+	</header>
+
+	<nav>
+		<ol><h2>STEP 3</h2>
+			<li><a href="input_form.html">입력폼 만들기</a></li>
+			<li><a href="choice_form.html">선택폼 만들기</a></li>
+			<li><a href="button.html">버튼 만들기</a></li>
+			<li><a href="label.html">레이블 달기</a></li>
+			<li><a href="method.html">폼의 메소드</a></li>
+		</ol>
+	</nav>
+
+	<section>
+		<h2>입력폼 만들기</h2>
+	</section>
+	<article>
+		<h3> FORM에 대해서 </h3>
+		< form > < /form > : 하나의 폼 생성. 입력한 정보들을 처리하는 단위가 된다.<br>
+		< form action = "서버주소"> : 입력된 정보들을 해당 서버로 보낸다.<br><br>
+
+		< input type="text" name="id"> : 문자를 입력할 수 있는 칸 생성. name속성은 서버에 전송할 때 이 값을 구분하는 기준이 되는 이름이다.<br>
+		<input type="text" name="id"> <br><br>
+		< input type="password" name="pwd"> : 비밀번호를 입력할 수 있는 칸 생성. name속성의 의미는 위와 동일하다.<br>
+		<input type="password" name="pwd"><br><br>
+		< input type="text", value="미리쓰기"> : 텍스트 칸을 미리 채워놓는다.<br>
+		<input type="text", value="미리써놓기"><br><br>
+		< textarea cols="n" rows="m" > < /textarea> : n개의 문자를 m줄 입력할 수있는 칸 생성.<br>
+		<textarea rows="3" cols="10"></textarea><br><br>
+		< inputy type="hidden" value="입력 값" > : 보이지 않는 텍스트 칸. 보이지 않기에 따로 입력할 수 없고 정해진 값만이 입력된다. 서버에 전송할 때 이 값 역시 함께 전송된다.<br>
+		<input type="hidden" value="secret"> <strong>[보이지 않는 예시. 있긴 있다.]</strong><br><br>
+		< input type="file" name="uploadfile" > : 파일 업로드가 가능한 상자. 이 경우 필수적으로 <strong>폼 형태</strong>를 다음과 같이 지정해야 한다.<br>
+		<strong>< form action="주소" method="post" enctype="multipart/form-data" ></strong><br>
+		<input type="file" name="uploadfile"><br> <br>
+		< input type="reset" > : 사용자가 입력한 정보를 모두 지운다.<br>
+		<input type="reset"><br><br>
+		< input type="submit" value="제출버튼 이름" > : 입력한 정보들을 다른 서버로 보낸다.<br>
+		<input type="submit" value="전송"><br>
+	</article>
+</body>
+</html>

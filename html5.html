@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="HTML5의 기능에대해 알려준다.">
+	<meta name="keywords" content="HTML,HTML문법,HTML기본,웹,프로그래밍,웹개발, HTML5">
+	<meta name="author" content="HYStarT">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<title>HTML5 도입 후 새로운 기능</title>
+</head>
+
+<body>
+	<header>
+		<a href="main.html"><h1> HTML의 기본 </h1></a>
+	</header>
+
+	<nav>
+		<ol><h2>STEP 4</h2>
+			<li><a href="font.html">폰트(글꼴) 설정</a></li>
+			<li><a href="meta.html">meta 태그</a></li>
+			<li><a href="semantic.html">의미론적 태그</a></li>
+			<li><a href="html5.html">HTML5 도입 후 새로운 기능</a></li>
+		</ol>
+	</nav>
+
+	<section>
+		<h2>HTML5 도입 후 새로운 기능</h2>
+	</section>
+
+	<article>
+		<h3>HTML5의 새로운 폼</h3>
+		< input type="number" name=" " min="a1" max="a2" > : 최소 a1부터 최대 a2 까지의 숫자만 입력 가능하다.<br>
+		<input type="number" name="numv" min="10" max="20"> 최소10, 최대 20<br>
+		< input type="color" name=" " > : 색상 선택이 가능하다.<br>
+		<input type="color" name="colorv"><br>
+		< input type="date" name=" " > : 날짜 선택이 가능하다.<br>
+		<input type="date" name="datev"><br>
+		< input type="email" name=" " > : 이메일 입력이 가능하다. 이메일 형식이 아니면 데이터전송을 거부한다.<br>
+		<input type="email", name="emailv"><br>
+		< input type="month" name=" " > : 날짜를 '달'까지 고를 수 있다.<br>
+		<input type="month", name="monthv"><br>
+		< input type="range" name=" " min="a1", max="a2"> : a1부터 a2까지 숫자를 고를 수 있다. 선택 바가 상당히 애매하다.<br>
+		<input type="range", name="rangev"><br>
+		< input type="search" name=" " > : 검색창이다. text랑 별다를게 없어 보인다.<br>
+		<input type="search" name="searchv"><br>
+		< input type="tel" name=" " > : 전화번호 입력이 가능하다.<br>
+		<input type="tel", name="telv"><br>
+		< input type="time" name=" " > : 시간 입력이 가능하다.<br>
+		<input type="time" name="timev"><br>
+		< input type="url" name=" " > : url주소 입력이 가능하다.<br>
+		<input type="url" name="urlv"><br>
+		< input type="week" name=" " > : 한 해의 몇번 째 주 선택이 가능하다.<br>
+		<input type="week" name="weekv"><br><br>
+
+		<h3>HTML5의 새로운 속성</h3>
+		< form autocomplete="on" > < /form >: 사용자의 의사에 따라 자동완성<br>
+		< input type="text" autocomplete="off" > : 이런식으로 특정 입력 칸은 자동완성기능을 없앨 수 있다.<br>
+		< input type="text" placeholder="내용" > : 입력하기 전에 내용을 띄우며 내용 입력시 사라진다.<br>
+		<form action="http://localhost/test.php">
+		<input type="text" name="text1" placeholder="입력하세요"><br>
+		< input type="text" autofocus > : 페이지 접속 시 자동으로 커서가 생긴다.<br>
+		<input type="text", name="text2" autofocus><br>
+		< input type="text" required > : 이 칸은 반드시 입력을 해야 데이터전송이 가능하다.<br>
+		<input type="text", name="3" required><br>
+		< input type="text" pattern="정규표현식" > : 입력값을 표현식에 따라 제한한다.<br>
+		<input type="text" name="text4" pattern="[a-zA-Z].+[a-zA-Z]"> <strong><--알파벳으로 시작하고 알파벳으로 끝나야하는 텍스트</strong><br>
+		<input type="submit">
+		</form>
+	</article>
+</body>
+<footer>
+	----------------------------------------------------------<br>
+	<h3>정규표현식</h3>
+	[a-z] : a부터 z까지 한 글자<br>
+	[A-Z] : A부터 Z까지 한 글자<br>
+	[0-9] : 0부터 9까지 한 숫자<br>
+	. : 모든 문자<br>
+	+ : 문자 한개 이상<br>
+	<strong>예시 : [a-zA-Z].+[a-zA-Z]</strong><br>
+	첫 자리에는 a~z 또는 A~Z 가 있어야 하며, 그 이후엔 모든 문자가 여러자리 올 수 있고, 마지막 자리에는 a~z 또는 A~Z 가 있어야 한다. 
+</footer>
+</html>

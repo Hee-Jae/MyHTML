@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="폼의 메소드에 대해 알려준다.">
+	<meta name="keywords" content="HTML,HTML문법,HTML기본,웹,프로그래밍,웹개발,메소드,method">
+	<meta name="author" content="HYStarT">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<title>폼의 메소드</title>
+</head>
+
+<body>
+	<header>
+		<a href="main.html"><h1> HTML의 기본 </h1></a>
+	</header>
+
+	<nav>
+		<ol><h2>STEP 3</h2>
+			<li><a href="input_form.html">입력폼 만들기</a></li>
+			<li><a href="choice_form.html">선택폼 만들기</a></li>
+			<li><a href="button.html">버튼 만들기</a></li>
+			<li><a href="label.html">레이블 달기</a></li>
+			<li><a href="method.html">폼의 메소드</a></li>
+		</ol>
+	</nav>
+	<section>
+		<h2>폼의 메소드</h2>
+	</section>
+	<article>
+		< form action="주소" method="get" > : 서버에 어떤 데이터를 보낼 때 url에 그 데이터가 뜬다. url을 이용해 데이터를 전송하는 방법. method 속성을 생략하면 기본적으로 <strong>get</strong>으로 설정된다. <br><br>
+
+		< form action="주소" method="post" > : url이 아닌 다른 방식으로 데이터를 전송한다. url에 데이터가 뜨지 않는다.<br><br>
+
+		<h2> form의 예시(실제로는 없는 주소에 보내 보겠다) </h2>
+		< form action="http://localhost/form.php" method="get" ><br>
+			아이디:< input type="text" name="id" ><br>
+			비밀번호:< input type="password" name="pwd" ><br>
+			< input type="submit" value="로그인" ><br>
+		< /form ><br><br>
+		<form action="http://localhost/form.php" method="get">
+			아이디:<input type="text" name="id"><br>
+			비밀번호:<input type="password" name="pwd"><br>
+			<input type="submit" value="로그인"><br>
+			<strong>아이디와 비밀번호를 입력하고 로그인을 눌렀을 때 들어가지는 페이지의 url을 보면 입력한 정보들이 나와있다.</strong><br><br>
+		</form>
+
+		< form action="http://localhost/form.php" method="post" ><br>
+			아이디:< input type="text" name="id" ><br>
+			비밀번호:< input type="password" name="pwd" ><br>
+			< input type="submit" value="로그인" ><br>
+		< /form ><br><br>
+		<form action="http://localhost/form.php" method="post">
+			아이디:<input type="text" name="id"><br>
+			비밀번호:<input type="password" name="pwd"><br>
+			<input type="submit" value="로그인"><br>
+			<strong>아이디와 비밀번호를 입력하고 로그인을 눌렀을 때 들어가지는 페이지의 url을 보면 입력한 정보들이 보이지 않는다.</strong><br><br>
+		</form>
+	</article>
+</body>
+</html>
